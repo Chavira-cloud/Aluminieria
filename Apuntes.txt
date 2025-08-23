@@ -1,0 +1,22 @@
+Planeación: Se quiere dar a conocer los servicios de la aluminieria Marco Cesar
+con imagenes y descripción de cada trabajo que se halla realizado 
+
+Desarrollo: Se puede hacer un 4 columnas y poner un avanzador de páginas, cuando se le 
+click nos mande una pantalla de una descripción mas detallada.
+
+Estrategia del contenido: Tenemos 40 años en el sector aluminiero que nos respaldan
+- Tenemos el costo beneficio a tu presupuesto. 
+-
+
+Modelado de contenido : Se contará con secciones de información sobre los servicios de 
+instalación , quienes somos , contacto.
+
+Jerarquia: Las páginas importantes son inicio, contacto , nosotros.
+-Páginas que ocupan soporte : article 
+
+Arquitectura de la informacion: 
+
+-Nav
+-hero
+-seccions(article) 
+-footer

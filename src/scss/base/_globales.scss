@@ -1,0 +1,23 @@
+@use 'variables' as v;
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* 1 rem = 10px */    
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body{
+    font-family: v.$fuente_principal;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-variation-settings:"wdth" 100;
+}
+
+.contenedor{
+    width: 100%;
+    margin: 0 auto;
+}
