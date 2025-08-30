@@ -376,3 +376,87 @@ header .nav-contenedor a {
 header .nav-contenedor a:hover {
   color: #6d96b1;
 }
+
+.seccion-aluminio {
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  gap: 5rem;
+}
+@media (min-width: 768px) {
+  .seccion-aluminio {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+}
+.seccion-aluminio_img {
+  justify-self: center;
+}
+.seccion-aluminio_img img {
+  max-width: 100%;
+  height: auto;
+}
+.seccion-aluminio_contenido {
+  justify-self: center;
+  align-self: center;
+  padding: 0 3rem;
+}
+.seccion-aluminio_contenido h1 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.seccion-aluminio_contenido p {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+footer {
+  display: grid;
+  gap: 1rem; /* espacio entre columnas/filas */
+  padding: 2rem;
+  background-color: #6d96b1;
+  height: auto;
+  max-width: 100%;
+}
+@media (min-width: 320px) {
+  footer {
+    grid-template-columns: repeat(2, 1fr); /* dos columnas iguales */
+  }
+}
+@media (min-width: 768px) {
+  footer {
+    grid-template-columns: repeat(3, 21rem); /* dos columnas iguales */
+  }
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  color: #ffffff;
+  font-size: 1rem;
+}
+@media (min-width: 320px) {
+  footer ul {
+    justify-self: center;
+  }
+}
+
+footer ul li a {
+  text-decoration: none; /* quita subrayado */
+  color: #ffffff; /* mantiene el color blanco */
+  font-family: "Roboto", sans-serif;
+}
+
+footer div {
+  grid-column: -1/5;
+  text-align: end;
+  margin-top: 1rem;
+}
+@media (min-width: 320px) {
+  footer div {
+    grid-column: 1/-1;
+    text-align: center;
+  }
+}

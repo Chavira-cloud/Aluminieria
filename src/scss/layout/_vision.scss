@@ -1,0 +1,38 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.seccion-aluminio{
+    @include m.contenedor;
+    display: grid;
+    gap:5rem;
+
+    @include m.tablet{
+        grid-template-columns: repeat(2,1fr);
+        align-items: center; // centra todos los hijos verticalmente
+    }
+
+
+    &_img{
+     justify-self: center;// alinea el hijo de forma horizontal
+        img{
+            max-width: 100%;
+            height: auto;
+        }
+    } 
+
+    &_contenido{
+        justify-self: center; // alinea el hijo en forma vertical
+        align-self: center;
+        padding: 0 3rem;
+
+        h1{
+            font-size: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        p{
+            font-size: 1.8rem;
+            font-weight: 700;
+        }
+    }
+}

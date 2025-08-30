@@ -1,0 +1,48 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+footer{
+    display: grid;
+    gap: 1rem; /* espacio entre columnas/filas */
+    padding: 2rem;
+    background-color:  v.$azul;
+    height: auto;
+    max-width: 100%;
+
+    @include m.telefono{
+        grid-template-columns: repeat(2, 1fr); /* dos columnas iguales */
+    }
+    
+    @include m.tablet{
+        grid-template-columns: repeat(3, 21rem); /* dos columnas iguales */
+    }
+  
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-family: v.$fuente_principal;
+    color: v.$blanco;
+    font-size: 1rem;
+    @include m.telefono{
+        justify-self: center;
+    }
+} 
+
+footer ul li a {
+  text-decoration: none; /* quita subrayado */
+  color: v.$blanco;      /* mantiene el color blanco */
+  font-family: v.$fuente_principal;
+}
+
+footer div {
+    grid-column: -1 / 5;
+    text-align: end;
+    margin-top: 1rem;
+    @include m.telefono{
+         grid-column: 1 / -1;
+          text-align: center;
+    }
+}

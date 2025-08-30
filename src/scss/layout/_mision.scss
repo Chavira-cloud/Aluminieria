@@ -1,0 +1,29 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.mision-aluminio{
+    @include m.contenedor;
+    @include m.tablet{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap:5rem;
+    }
+}
+
+.imagen-mision{
+    margin-top: 5rem;
+    justify-self: center;// alinea el hijo de forma horizontal
+} 
+
+.contenido-aluminio{
+    align-self: center; // alinea el hijo en forma vertical
+    h1{
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    p{
+        font-size: 1.8rem;
+        font-family: 700;
+    }
+}
