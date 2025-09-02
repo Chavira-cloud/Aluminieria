@@ -6,6 +6,11 @@
     display: grid;
     gap:5rem;
 
+    @include m.telefono{
+        grid-template-rows: auto auto;
+        
+    }
+
     @include m.tablet{
         grid-template-columns: repeat(2,1fr);
         align-items: center; // centra todos los hijos verticalmente
@@ -13,16 +18,25 @@
 
 
     &_img{
-     justify-self: center;// alinea el hijo de forma horizontal
+      justify-self: center;// alinea el hijo de forma horizontal
         img{
             max-width: 100%;
             height: auto;
         }
     } 
 
+    .vision_img{
+        @include m.telefono{
+            grid-row: 1 ;
+        }
+
+        @include m.tablet{
+            grid-column: 2 / span 2;
+        }
+    } 
+
     &_contenido{
-        justify-self: center; // alinea el hijo en forma vertical
-        align-self: center;
+        place-self: center; // alinea el hijo en forma vertical
         padding: 0 3rem;
 
         h1{

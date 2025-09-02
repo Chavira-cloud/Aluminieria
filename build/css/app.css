@@ -334,7 +334,16 @@ header {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 60rem;
+}
+@media (min-width: 320px) {
+  header {
+    height: 30rem;
+  }
+}
+@media (min-width: 768px) {
+  header {
+    height: 40rem;
+  }
 }
 header .contenido-header {
   padding: 1rem 2rem;
@@ -383,6 +392,11 @@ header .nav-contenedor a:hover {
   display: grid;
   gap: 5rem;
 }
+@media (min-width: 320px) {
+  .seccion-aluminio {
+    grid-template-rows: auto auto;
+  }
+}
 @media (min-width: 768px) {
   .seccion-aluminio {
     grid-template-columns: repeat(2, 1fr);
@@ -396,9 +410,18 @@ header .nav-contenedor a:hover {
   max-width: 100%;
   height: auto;
 }
+@media (min-width: 320px) {
+  .seccion-aluminio .vision_img {
+    grid-row: 1;
+  }
+}
+@media (min-width: 768px) {
+  .seccion-aluminio .vision_img {
+    grid-column: 2/span 2;
+  }
+}
 .seccion-aluminio_contenido {
-  justify-self: center;
-  align-self: center;
+  place-self: center;
   padding: 0 3rem;
 }
 .seccion-aluminio_contenido h1 {
@@ -447,6 +470,10 @@ footer ul li a {
   text-decoration: none; /* quita subrayado */
   color: #ffffff; /* mantiene el color blanco */
   font-family: "Roboto", sans-serif;
+}
+
+footer ul li img {
+  width: 1rem;
 }
 
 footer div {

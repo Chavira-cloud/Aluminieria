@@ -37,6 +37,10 @@ footer ul li a {
   font-family: v.$fuente_principal;
 }
 
+footer ul li img{
+    width: 1rem;
+}
+
 footer div {
     grid-column: -1 / 5;
     text-align: end;

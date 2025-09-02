@@ -6,7 +6,14 @@ header{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 60rem;
+    
+    @include m.telefono{
+    height: 30rem;
+    }
+
+    @include m.tablet{
+    height: 40rem;
+    }
 
     .contenido-header{
         padding: 1rem 2rem;
